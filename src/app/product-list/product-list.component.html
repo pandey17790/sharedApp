@@ -1,0 +1,18 @@
+<div class="row">
+    <div class='col-4'>
+        <h4>Child component</h4>
+        <label>Data from Parent Component:</label>{{parentData}}
+        <input type="text" #childText (keyup) ="onChange(childText.value)">
+    </div>
+    <div class='col-4'>
+        <h4>Click Event Example</h4>
+        <button (click)="buttonClick()">ClickME</button>
+        <br>
+    </div>
+    <div class='col-4'>
+        <p>Binding</p>
+        <input type="text" [(ngModel)]='prodName'>
+        <br>
+        <span> You are typying this {{prodName}}</span>
+    </div>
+</div>

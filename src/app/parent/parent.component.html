@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-12 text-center">
+    <p> Component Communication</p>
+  </div>
+</div>
+<div class='row'>
+  <div class='col-5'>
+    <h5>Parent Component</h5>
+    <label>Data from Child: {{childData}} </label>
+    <br>
+    <input type="text" #pdata (keyup)='0'>
+    <br>
+  </div>
+  <div class="col-1"></div>
+  <div class="col-6">
+    <app-child [parentData]='pdata.value' (childEvent)="catchChildEvent($event)"></app-child>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="row">
+    <div class='col-12'>
+        <h5>Child component</h5>
+        <label>Data from Parent: </label>{{parentData}} <br>
+        <input type="text" #childText (keyup)="onChange(childText.value)">
+    </div>
+</div>
